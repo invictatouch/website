@@ -6,27 +6,13 @@
     </div>
     {{ with .Params.memberships }}
     <div class="col-7">
-      <h2>How to sign-up</h2>
-      <p>
-        Choose your membership plan below &mdash;
-        if you opt to pay for the whole year in advance you will get <b>12
-        months for the price of 11</b>.
-        Click on the appropriate "Join" button and this will take you to the Direct Debit
-        payment form. Complete the Direct Debit sign-up and then you will be redirected
-        to another form to provide your personal details for our records. You must
-        complete both parts of the sign-up for your membership to be complete.
-      </p>
-      <p>
-        If you have any queries or problems, please email
-        <a href="mailto:membership@invictatouch.com">membership@invictatouch.com</a> (please allow
-        up to 48 hours for a response).
-      </p>
       <div class="row">
         {{ range . }}
         <div class="col">
           <div class="card border-{{ .bgcolour }} h-100 text-{{ .bgcolour }}">
+            <img src="{{ .image }}" class="card-img-top" alt="{{ .title }}" />
             <div class="card-body">
-              <h4 class="card-title text-center">{{ .title }}</h4>
+              <h4 class="card-title text-center heavy">{{ .title }}</h4>
               {{ with .bullets }}
               <ul>
                 {{ range . }}<li>{{ . }}</li>{{ end }}
@@ -38,19 +24,33 @@
                 <div class="col">
                   Monthly<br/>
                   <h1 class="text-{{ .bgcolour }}">{{ .monthly }}</h1>
-                  <a href="#" class="btn btn-{{ .bgcolour }}">Join</a>
+                  <a href="#" class="btn btn-{{ .bgcolour }}">Pay Monthly</a>
                 </div>
                 <div class="col">
-                  Yearly<br/>
+                  Yearly<sup>*</sup><br/>
                   <h1 class="text-{{ .bgcolour }}">{{ .yearly }}</h1>
-                  <a href="#" class="btn btn-{{ .bgcolour }}">Join</a><br/>
+                  <a href="#" class="btn btn-{{ .bgcolour }}">Pay Yearly</a><br/>
                 </div>
               </div>
+              <p class="mt-2 text-center small mb-0">* Get 12 months for the price of 11</p>
             </div>
           </div>
         </div>
         {{ end }}
       </div>
+      <h2 class="mt-4">How to sign-up</h2>
+      <p>
+        Choose your membership plan above, click on the appropriate button and this will
+        take you to the Direct Debit payment form.
+        Complete the Direct Debit mandate and then you will be redirected
+        to another form to provide your personal details for our records. You must
+        complete both parts of the sign-up for your membership to be complete.
+      </p>
+      <p>
+        If you have any queries or problems, please email
+        <a href="mailto:membership@invictatouch.com">membership@invictatouch.com</a> (please allow
+        up to 48 hours for a response).
+      </p>
     </div>
     {{ end }}
   </div>

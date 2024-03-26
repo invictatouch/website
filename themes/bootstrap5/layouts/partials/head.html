@@ -8,18 +8,26 @@
     :root {
       --bs-primary: #002266;
       --bs-primary-rgb: 0, 34, 102;
-      --bs-secondary: #aa0033;
-      --bs-secondary-rgb: 170, 0, 51;
+      --bs-secondary: #aa0044;
+      --bs-secondary-rgb: 170, 0, 68;
       --bs-link-color-rgb: var(--bs-primary-rgb);
+    }
+    .btn-primary {
+      --bs-btn-bg: var(--bs-primary);
+      --bs-btn-border-color: var(--bs-primary);
+    }
+    .btn-secondary {
+      --bs-btn-bg: var(--bs-secondary);
+      --bs-btn-border-color: var(--bs-secondary);
     }
     @font-face {font-family: Gilroy; font-weight: 800; src: url("/fonts/gilroy-extrabold.otf") format("opentype");}
     @font-face {font-family: Gilroy; font-weight: 300; src: url("/fonts/gilroy-light.otf") format("opentype");}
-    h1, h2, h3, h4, h5, h6 {font-family: Gilroy; font-weight: 800; color: var(--bs-primary);}
-    h1>small, h2>small, h3>small, h4>small, h5>small, h6>small {font-family: Gilroy; font-weight: 300; color: var(--bs-secondary);}
+    h1, h2, h3, h4, h5, h6 {font-family: Gilroy; font-weight: 300; color: var(--bs-primary);}
+    h1>small, h2>small, h3>small, h4>small, h5>small, h6>small {font-weight: 300; color: var(--bs-secondary);}
+    .heavy {font-family: Gilroy; font-weight: 800;}
     html {position: relative; min-height: 100%;}
-    body {margin-bottom: 60px;}
-    .banner {height: 120px; background: linear-gradient(to right, rgba(0,34,136,1) 20%, rgba(170,0,51,1) 80%);}
-    .footer {position: absolute; bottom: 20px; width: 100%;}
+    body {height: 100%; margin-bottom: 60px;}
+    .banner {height: 120px; background: linear-gradient(to right, var(--bs-primary) 20%, var(--bs-secondary) 80%);}
     .card-img-top {filter: brightness(75%);}
     .overlay {position: absolute; width: 100%; top: calc(50% - 40px); font-size: 80px; line-height: 1; text-align: center; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);}
   </style>

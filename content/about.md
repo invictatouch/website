@@ -1,6 +1,10 @@
 ---
 title: 'About Invicta Touch'
 layout: about
+menus:
+  main:
+    name: About
+    weight: 2
 
 committee:
  - name: Suz Wilson
