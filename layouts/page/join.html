@@ -5,15 +5,15 @@
       {{ .Content }}
     </div>
     {{ with .Params.memberships }}
-    <div class="col-8">
-      <h2>How to Sign-up</h2>
+    <div class="col-7">
+      <h2>How to sign-up</h2>
       <p>
         Choose your membership plan below &mdash;
         if you opt to pay for the whole year in advance you will get <b>12
         months for the price of 11</b>.
         Click on the appropriate "Join" button and this will take you to the Direct Debit
-        payment form. Complete the Direct Debit sign-up and then you should be redirected
-        to another form for you to provide your member details for our records. You must
+        payment form. Complete the Direct Debit sign-up and then you will be redirected
+        to another form to provide your personal details for our records. You must
         complete both parts of the sign-up for your membership to be complete.
       </p>
       <p>
@@ -21,28 +21,30 @@
         <a href="mailto:membership@invictatouch.com">membership@invictatouch.com</a> (please allow
         up to 48 hours for a response).
       </p>
-      <div class="card-deck">
+      <div class="row">
         {{ range . }}
-        <div class="card border-{{ .bgcolour }}">
-          <div class="card-header bg-{{ .bgcolour }} text-{{ .textcolour }}">{{ .title }}</div>
-          <div class="card-body">
-            {{ with .bullets }}
-            <ul>
-              {{ range . }}<li>{{ . }}</li>{{ end }}
-            </ul>
-            {{ end }}
-          </div>
-          <div class="card-footer">
-            <div class="row text-center">
-              <div class="col">
-                Monthly<br/>
-                <h1>{{ .monthly }}</h1>
-                <a href="#" class="btn btn-primary">Join</a>
-              </div>
-              <div class="col">
-                Yearly<br/>
-                <h1>{{ .yearly }}</h1>
-                <a href="#" class="btn btn-primary">Join</a><br/>
+        <div class="col">
+          <div class="card border-{{ .bgcolour }} h-100 text-{{ .bgcolour }}">
+            <div class="card-body">
+              <h4 class="card-title text-center">{{ .title }}</h4>
+              {{ with .bullets }}
+              <ul>
+                {{ range . }}<li>{{ . }}</li>{{ end }}
+              </ul>
+              {{ end }}
+            </div>
+            <div class="card-footer">
+              <div class="row text-center">
+                <div class="col">
+                  Monthly<br/>
+                  <h1 class="text-{{ .bgcolour }}">{{ .monthly }}</h1>
+                  <a href="#" class="btn btn-{{ .bgcolour }}">Join</a>
+                </div>
+                <div class="col">
+                  Yearly<br/>
+                  <h1 class="text-{{ .bgcolour }}">{{ .yearly }}</h1>
+                  <a href="#" class="btn btn-{{ .bgcolour }}">Join</a><br/>
+                </div>
               </div>
             </div>
           </div>

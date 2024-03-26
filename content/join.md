@@ -1,11 +1,11 @@
 ---
-title: 'Join Invicta Touch'
+title: 'Join Invicta Touch Today'
 layout: join
 
 memberships:
  - title: Adult Membership
    bgcolour: primary
-   textcolour: white
+   textcolour: light
    monthly: £25
    yearly: £275
    bullets:
@@ -14,8 +14,8 @@ memberships:
     - Opportunities to play in development and elite National Touch Series events
 
  - title: Junior Membership
-   colour: secondary
-   textcolour: dark
+   bgcolour: secondary
+   textcolour: light
    monthly: £15
    yearly: £165
    bullets:

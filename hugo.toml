@@ -1,4 +1,4 @@
 baseURL = 'https://invictatouch.com/'
 languageCode = 'en-gb'
 title = 'Invicta Touch'
-theme = 'bootswatch'
+theme = 'bootstrap5'
