@@ -8,7 +8,7 @@ menus:
 
 memberships:
  - title: Adult Membership
-   image: /images/adult_membership.jpg
+   image: /images/membership/adult_membership.jpg
    bgcolour: primary
    textcolour: light
    monthly: £25
@@ -19,7 +19,7 @@ memberships:
     - Opportunities to play in development tournaments and, subject to selection, elite National Touch Series events
 
  - title: Junior Membership
-   image: /images/junior_membership.jpg
+   image: /images/membership/junior_membership.jpg
    bgcolour: secondary
    textcolour: light
    monthly: £15

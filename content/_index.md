@@ -1,5 +1,6 @@
 ---
 title: 'Invicta Touch'
+layout: 'countdown'
 menus:
   main:
     name: Home
