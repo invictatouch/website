@@ -1,14 +1,14 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   <div class="row">
-    <div class="col">
+    <div class="col-xl-5">
       {{ .Content }}
     </div>
     {{ with .Params.memberships }}
-    <div class="col-7">
+    <div class="col-xl-7">
       <div class="row">
         {{ range . }}
-        <div class="col">
+        <div class="col-md mb-4">
           <div class="card border-{{ .bgcolour }} h-100 text-{{ .bgcolour }}">
             <img src="{{ .image }}" class="card-img-top" alt="{{ .title }}" />
             <div class="card-body">
@@ -38,7 +38,7 @@
         </div>
         {{ end }}
       </div>
-      <h2 class="mt-4">How to sign-up</h2>
+      <h2>How to sign-up</h2>
       <p>
         Choose your membership plan above, click on the appropriate button and this will
         take you to the Direct Debit payment form.

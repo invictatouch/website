@@ -1,13 +1,14 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
-  <h2 class="border-bottom">Committee</h2>
+  <h3 class="border-bottom mb-4">Committee</h3>
   <div class="row">
     {{ with .Params.committee }}
     {{ range . }}
-    <div class="col-4">
-      <h4 class="heavy">{{ .name }}<br/><small>{{ .position }}</small></h3>
-      <p>{{ .bio }}</p>
+    <div class="col-xl col-md-4 col-6 text-center mb-4">
+      <img src="{{ .mugshot }}" alt="{{ .name }}" class="img-thumbnail" />
+      <h4 class="mb-0 mt-2">{{ .name }}</h4>
+      <span class="text-secondary">{{ .position }}</span>
     </div>
     {{ end }}
     {{ end }}
