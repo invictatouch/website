@@ -8,7 +8,7 @@
     <div class="col-xl-7">
       <div class="row">
         {{ range . }}
-        <div class="col-md mb-4">
+        <div class="col-md mb-2">
           <div class="card border-{{ .bgcolour }} h-100 text-{{ .bgcolour }}">
             <img src="{{ .image }}" class="card-img-top" alt="{{ .title }}" />
             <div class="card-body">
@@ -37,6 +37,14 @@
           </div>
         </div>
         {{ end }}
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-warning">
+            Not ready to commit or can't play every week? Non-members are welcome at our weekly
+            touch sessions &mdash; just turn up when you can and pay <b>£5 per session</b>.
+          </div>
+        </div>
       </div>
       <h2>How to sign-up</h2>
       <p>
