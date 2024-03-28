@@ -4,7 +4,7 @@ layout: about
 menus:
   main:
     name: About
-    weight: 4
+    weight: 2
 
 committee:
  - name: Suz Wilson
@@ -24,7 +24,7 @@ committee:
    mugshot: /images/mugshots/dan.jpg
 
 ---
-Invicta Touch is an independent Touch Rugby club based in Canterbury in Kent. We are affiliated
+Invicta Touch is an independent touch rugby club based in Canterbury in Kent. We are affiliated
 to [England Touch](https://englandtouch.org.uk) and play under
 [Federation of International Touch](https://internationaltouch.org) rules.
 

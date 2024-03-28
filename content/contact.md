@@ -1,9 +1,9 @@
 ---
 title: 'Contact Us'
 menus:
-  main:
+  footer:
     name: Contact
-    weight: 5
+    weight: 1
 ---
 
 * For membership queries please email membership@invictatouch.com

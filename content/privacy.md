@@ -3,6 +3,7 @@ title: 'Privacy Policy'
 menus:
   footer:
     name: Privacy
+    weight: 2
 ---
 
 This policy details what personal information is held by Invicta Touch Club and how that data is processed.

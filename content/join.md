@@ -4,7 +4,7 @@ layout: join
 menus:
   main:
     name: Membership
-    weight: 2
+    weight: 3
 
 memberships:
  - title: Adult Membership
