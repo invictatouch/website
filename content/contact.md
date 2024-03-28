@@ -7,4 +7,4 @@ menus:
 ---
 
 * For membership queries please email membership@invictatouch.com
-* For all other touch-related queries please email info@invictatouch.com
+* For all other touch-related enquiries please email info@invictatouch.com
