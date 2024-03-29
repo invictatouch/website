@@ -1,0 +1,65 @@
+{{ define "head" }}
+<style>
+  .B18, .MO, .M20, .M23, .M30, .M35, .M40, .M45, .M50 {background-color: #004488;}
+  .G18, .WO, .W20, .W23, .W27, .W35, .W40 {background-color: #cc0066;}
+  .X15, .X18, .XO, .X20, .X30 {background-color: #333333;}
+  .X15, .B18, .G18, .X18, .M20, .M23, .W20, .W23, .X20 {opacity: 50%;}
+  .M30, .W27, .X30, .M35, .W35, .M40, .W40, .M45, .M50 {opacity: 50%}
+</style>
+{{ end }}
+{{ define "main" }}
+{{ .Content }}
+<div class="row">
+  <div class="col-xl-4 col-lg-6">
+  {{ with .Params.opens }}
+    <h3>Opens</h3>
+    {{ partial "honours.html" . }}
+  {{ end }}
+  </div>
+  {{ with .Params.seniors }}
+  <div class="col-xl-4 col-lg-6">
+    <h2>Seniors &amp; Masters</h2>
+    {{ partial "honours.html" . }}
+  </div>
+  {{ end }}
+  {{ with .Params.juniors }}
+  <div class="col-xl-4 col-lg-6">
+    <h3>Juniors &amp; Youth</h3>
+    {{ partial "honours.html" . }}
+  </div>
+  {{ end }}
+  {{ with .Params.referees }}
+  <div class="col-xl-4 col-lg-6">
+    <h3>Referees</h3>
+    {{ partial "honours.html" . }}
+  </div>
+  {{ end }}
+</div>
+<div class="row mt-3">
+  <div class="col small text-center text-muted">
+    <span class="badge MO">MO</span> Men's Open
+    <span class="badge B18 ms-1">B18</span> Boys' Under 18s
+    <span class="badge M20 ms-1">M20</span> Men's Under 20s
+    <span class="badge M30 ms-1">M30</span> Men's Over 30s
+    <span class="badge M30 ms-1">M35</span> Men's Over 35s
+    <span class="badge M40 ms-1">M40</span> Men's Over 40s
+    <span class="badge M45 ms-1">M45</span> Men's Over 45s
+    <span class="badge M50 ms-1">M50</span> Men's Over 50s
+    <br/>
+    <span class="badge WO">WO</span> Women's Open
+    <span class="badge G18 ms-1">G18</span> Girls' Under 18s
+    <span class="badge W20 ms-1">W20</span> Women's Under 20s
+    <span class="badge W27 ms-1">W27</span> Women's Over 27s
+    <span class="badge W35 ms-1">W35</span> Women's Over 35s
+    <span class="badge W40 ms-1">W40</span> Women's Over 40s
+    <br/>
+    <span class="badge XO">XO</span> Mixed Open
+    <span class="badge X15 ms-1">X15</span> Mixed Under 15s
+    <span class="badge X18 ms-1">X18</span> Mixed Under 18s
+    <span class="badge X20 ms-1">X20</span> Mixed Under 20s
+    <span class="badge X30 ms-1">X30</span> Mixed Over 30s
+  </div>
+</div>
+{{ end }}
+
+

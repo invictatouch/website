@@ -1,0 +1,17 @@
+<table class="table table-sm">
+  {{ range . }}
+  <tr>
+    <td>
+      <img src="/images/flags/{{ if .country }}{{ lower .country }}{{ else }}england{{ end }}.png" class="float-start me-2"/>
+      {{ .name }}
+    </td>
+    <td class="text-end">
+      {{ with .divisions }}
+      {{ range . }}
+      <span class="badge {{.}}  text-white">{{ . }}</span>
+      {{ end }}
+      {{ end }}
+    </td>
+  </tr>
+  {{ end }}
+</table>
