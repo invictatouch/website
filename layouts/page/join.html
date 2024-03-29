@@ -8,7 +8,7 @@
     <div class="col-xl-7">
       <div class="row">
         {{ range . }}
-        <div class="col-md mb-2">
+        <div class="col-md mb-3">
           <div class="card border-{{ .bgcolour }} h-100 text-{{ .bgcolour }}">
             <img src="{{ .image }}" class="card-img-top" alt="{{ .title }}" />
             <div class="card-body">
@@ -41,24 +41,31 @@
       <div class="row">
         <div class="col">
           <div class="alert alert-warning">
-            Not ready to commit or can't play every week? Non-members are welcome at our weekly
-            touch sessions &mdash; just turn up when you can and pay <b>£5 per session</b>.
+            <h5 class="alert-heading heavy">Pay-to-Play Membership</h5>
+            <p>
+              Not ready to commit or can't play every week?
+              <b>Join as a pay-to-play member for just £10 a year.</b>
+              This makes you a member of the club for insurance purposes and you can then attend
+              whichever sessions are convenient for you for <b>£6 per session</b>.
+            </p>
+            <p class="text-center mb-0"><a href="#" class="btn btn-warning">Join Now</a></p>
           </div>
         </div>
+        <div class="col">
+          <p>
+            Choose your membership plan, click on the appropriate button and this will
+            take you to the Direct Debit payment form.
+            Complete the Direct Debit mandate and then you will be redirected
+            to another form to provide your personal details for our records. You must
+            complete both parts of the sign-up for your membership to be complete.
+          </p>
+          <p>
+            If you have any queries or problems, please email
+            <a href="mailto:membership@invictatouch.com">membership@invictatouch.com</a> (please allow
+            up to 48 hours for a response).
+          </p>
+        </div>
       </div>
-      <h2>How to sign-up</h2>
-      <p>
-        Choose your membership plan above, click on the appropriate button and this will
-        take you to the Direct Debit payment form.
-        Complete the Direct Debit mandate and then you will be redirected
-        to another form to provide your personal details for our records. You must
-        complete both parts of the sign-up for your membership to be complete.
-      </p>
-      <p>
-        If you have any queries or problems, please email
-        <a href="mailto:membership@invictatouch.com">membership@invictatouch.com</a> (please allow
-        up to 48 hours for a response).
-      </p>
     </div>
     {{ end }}
   </div>

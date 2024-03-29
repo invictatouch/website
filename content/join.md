@@ -14,7 +14,8 @@ memberships:
    monthly: £25
    yearly: £275
    bullets:
-    - Up to two sessions each week
+    - For anyone aged 14 or over
+    - Two sessions each week
     - Coaching by England international players
     - Opportunities to play in development tournaments and, subject to selection, elite National Touch Series events
 
@@ -25,9 +26,9 @@ memberships:
    monthly: £15
    yearly: £165
    bullets:
-    - Weekly sessions during term times for ages 5 to 17
-    - Fully qualified and DBS-checked coaches
-    - Junior members aged 14+ are welcome to attend adult sessions too
+    - Weekly sessions during term times for ages 5 to 14
+    - Coaching by England international players
+    - All coaches are ETA qualified and DBS checked
 ---
 
 Invicta Touch offers a range of different membership options, providing
