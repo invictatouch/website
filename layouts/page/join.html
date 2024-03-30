@@ -4,12 +4,12 @@
     <div class="col-xl-5">
       {{ .Content }}
     </div>
-    {{ with .Params.memberships }}
     <div class="col-xl-7">
+      {{ with .Params.memberships }}
       <div class="row">
         {{ range . }}
         <div class="col-md mb-3">
-          <div class="card border-{{ .bgcolour }} h-100 text-{{ .bgcolour }}">
+          <div class="card border-{{ .bg_colour }} h-100 text-{{ .bg_colour }}">
             <img src="{{ .image }}" class="card-img-top" alt="{{ .title }}" />
             <div class="card-body">
               <h4 class="card-title text-center heavy">{{ .title }}</h4>
@@ -23,13 +23,13 @@
               <div class="row text-center">
                 <div class="col">
                   Monthly<br/>
-                  <h1 class="text-{{ .bgcolour }}">{{ .monthly }}</h1>
-                  <a href="#" class="btn btn-{{ .bgcolour }}">Pay Monthly</a>
+                  <h1 class="text-{{ .bg_colour }}">{{ .monthly_cost }}</h1>
+                  <a href="{{ .monthly_url }}" target="_blank" class="btn btn-{{ .bg_colour }}">Pay Monthly</a>
                 </div>
                 <div class="col">
                   Yearly<sup>*</sup><br/>
-                  <h1 class="text-{{ .bgcolour }}">{{ .yearly }}</h1>
-                  <a href="#" class="btn btn-{{ .bgcolour }}">Pay Yearly</a><br/>
+                  <h1 class="text-{{ .bg_colour }}">{{ .yearly_cost }}</h1>
+                  <a href="{{ .yearly_url }}" target="_blank" class="btn btn-{{ .bg_colour }}">Pay Yearly</a><br/>
                 </div>
               </div>
               <p class="mt-2 text-center small mb-0">* Get 12 months for the price of 11</p>
@@ -38,17 +38,18 @@
         </div>
         {{ end }}
       </div>
+      {{ end }}
       <div class="row">
         <div class="col">
           <div class="alert alert-warning">
             <h5 class="alert-heading heavy">Pay-to-Play Membership</h5>
             <p>
               Not ready to commit or can't play every week?
-              <b>Join as a pay-to-play member for just £10 a year.</b>
+              <b>Join as a pay-to-play member for just {{ .Params.paytoplay_yearly }} a year.</b>
               This makes you a member of the club for insurance purposes and you can then attend
-              whichever sessions are convenient for you for <b>£6 per session</b>.
+              whichever sessions are convenient for you for <b>{{ .Params.paytoplay_session }} per session</b>.
             </p>
-            <p class="text-center mb-0"><a href="#" class="btn btn-warning">Join Now</a></p>
+            <p class="text-center mb-0"><a href="{{ .Params.paytoplay_url }}" target="_blank" class="btn btn-warning">Join Now</a></p>
           </div>
         </div>
         <div class="col">
@@ -67,7 +68,6 @@
         </div>
       </div>
     </div>
-    {{ end }}
   </div>
 {{ end }}
 

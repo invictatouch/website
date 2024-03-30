@@ -9,10 +9,12 @@ menus:
 memberships:
  - title: Adult Membership
    image: /images/membership/adult_membership.jpg
-   bgcolour: primary
-   textcolour: light
-   monthly: £25
-   yearly: £275
+   bg_colour: primary
+   text_colour: light
+   monthly_cost: £25
+   monthly_url: https://pay.gocardless.com/AL00160FDSE5RS
+   yearly_cost: £275
+   yearly_url: https://pay.gocardless.com/AL00160FDYGMEY
    bullets:
     - For anyone aged 14 or over
     - Two sessions each week
@@ -21,14 +23,18 @@ memberships:
 
  - title: Junior Membership
    image: /images/membership/junior_membership.jpg
-   bgcolour: secondary
-   textcolour: light
-   monthly: £15
-   yearly: £165
+   bg_colour: secondary
+   text_colour: light
+   monthly_cost: £15
+   yearly_cost: £165
    bullets:
     - Weekly sessions during term times for ages 5 to 14
     - Coaching by England international players
     - All coaches are ETA qualified and DBS checked
+
+paytoplay_yearly: £10
+paytoplay_session: £6
+paytoplay_url: https://pay.gocardless.com/AL00160FE006BG
 ---
 
 Invicta Touch offers a range of different membership options, providing
