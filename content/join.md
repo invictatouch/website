@@ -16,24 +16,28 @@ memberships:
    yearly_cost: £275
    yearly_url: https://pay.gocardless.com/AL00160FDYGMEY
    bullets:
-    - For anyone aged 14 or over
-    - Two sessions each week
-    - Coaching by England international players
+    - Two adult sessions each week
+    - Coaching by England players
     - Opportunities to play in development tournaments and, subject to selection, elite National Touch Series events
+    - <b>Includes one free child membership</b> with weekly term-time sessions (and/or access to adult sessions if aged 14+)
 
- - title: Junior Membership
+ - title: Family Membership
+   subtitle: Up to 2 adults + 2 children / 1 adult + 3 children
    image: /images/membership/junior_membership.jpg
    bg_colour: secondary
    text_colour: light
-   monthly_cost: £15
-   yearly_cost: £165
+   monthly_cost: £40
+   monthly_url: https://pay.gocardless.com/AL00161YEMCQJ7
+   yearly_cost: £440
+   yearly_url: https://pay.gocardless.com/AL00161YEJ9A4H
    bullets:
-    - Weekly sessions during term times for ages 5 to 14
-    - Coaching by England international players
-    - All coaches are ETA qualified and DBS checked
+    - For two adults and up to two children (aged 5 to 17), or one adult and up to three children
+    - Have a bigger family? Email <a href="mailto:https://invictatouch.com" class="alert-link">membership@invictatouch.com</a>
+    - Weekly term-time sessions for juniors with coaching by England players
+    - All the benefits of adult membership for adults and over-14s
 
 paytoplay_yearly: £10
-paytoplay_session: £6
+paytoplay_session: £7
 paytoplay_url: https://pay.gocardless.com/AL00160FE006BG
 ---
 

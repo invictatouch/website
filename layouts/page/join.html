@@ -15,7 +15,7 @@
               <h4 class="card-title text-center heavy">{{ .title }}</h4>
               {{ with .bullets }}
               <ul>
-                {{ range . }}<li>{{ . }}</li>{{ end }}
+                {{ range . }}<li>{{ .|safeHTML }}</li>{{ end }}
               </ul>
               {{ end }}
             </div>
