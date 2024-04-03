@@ -8,7 +8,7 @@
     <div class="col-xl col-md-4 col-6 text-center mb-4">
       <img src="{{ .mugshot }}" alt="{{ .name }}" class="img-thumbnail" />
       <h4 class="mb-0 mt-2">{{ .name }}</h4>
-      <span class="text-secondary">{{ .position }}</span>
+      <span class="text-secondary">{{ .position|safeHTML }}</span>
     </div>
     {{ end }}
     {{ end }}

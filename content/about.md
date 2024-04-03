@@ -8,20 +8,20 @@ menus:
 
 committee:
  - name: Suz Wilson
-   position: President, Treasurer & Summer League
-   mugshot: /images/mugshots/suz.jpg
+   position: President, Treasurer & Summer&nbsp;League
+   mugshot: /images/mugshots/suz.jpg?a
  - name: Tom Humphreys
    position: Junior Lead & Safeguarding
    mugshot: /images/mugshots/tom.jpg
  - name: Vaughn Meredith
-   position: Senior Lead & University Liaison
+   position: Senior Lead & University&nbsp;Liaison
    mugshot: /images/mugshots/vaughn.jpg
  - name: Ellen King
    position: Secretary
    mugshot: /images/mugshots/ellen.jpg
  - name: Dan Dyer
    position: Membership & Website
-   mugshot: /images/mugshots/dan.jpg
+   mugshot: /images/mugshots/dan.jpg?a
 
 ---
 Invicta Touch is an independent touch rugby club based in Canterbury in Kent. We are affiliated
