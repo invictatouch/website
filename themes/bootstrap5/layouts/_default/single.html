@@ -3,6 +3,9 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
+  {{ if .Params.image }}
+    <img src="{{ .Params.image }}" class="w-50 float-end ms-5"/>
+  {{ end }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 {{ end }}
