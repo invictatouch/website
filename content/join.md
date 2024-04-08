@@ -49,9 +49,8 @@ grass and 3G/4G pitches, as well as having access to indoor training and
 fitness sessions during the winter months. See below for a full
 breakdown of the year's training sessions.
 
-Members will receive top coaching from England Touch players.
-They are dedicated to help individuals come together, develop skills and
-improve abilities in a social and welcoming environment.
+Members will receive coaching from England Touch players
+who will help develop your skills in a welcoming and social environment.
 We offer a range of different player pathways &mdash; including junior,
 development, elite, and senior levels &mdash; with a focus on providing
 opportunities for all members to progress and compete at their desired
