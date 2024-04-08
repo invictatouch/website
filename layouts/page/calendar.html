@@ -18,6 +18,22 @@
       headerToolbar: {right: 'dayGridMonth,listMonth today prev,next'},
       listDayFormat: {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'},
       listDaySideFormat: null,
+      views: {
+        list: {
+          eventContent: function(arg) {
+            let title = arg.event._def.title;
+            let location = arg.event._def.extendedProps.location;
+            let url = arg.event._def.url;
+            if (location) {
+              return {html: `<a href="${url}"><b>${title}</b><br/><small class="text-muted">${location}</small></a>`};
+            }
+            else {
+              return {html: `<a href="${url}"><b>${title}</b></a>`};
+            }
+          }
+        }
+      },
+      validRange: function(nowDate) { return {start: nowDate}; }
     });
     calendar.render();
   });
