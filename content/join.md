@@ -45,7 +45,7 @@ Invicta Touch offers a range of different membership options, providing
 opportunities for all individuals to engage in Touch.
 **Your first two sessions with us are free** &mdash; afterwards membership can be
 paid via Direct Debit. Your membership covers you for the full year, using
-grass and 3G pitches, as well as having access to indoor training and
+grass and 3G/4G pitches, as well as having access to indoor training and
 fitness sessions during the winter months. See below for a full
 breakdown of the year's training sessions.
 
@@ -57,26 +57,32 @@ development, elite, and senior levels &mdash; with a focus on providing
 opportunities for all members to progress and compete at their desired
 level.
 
-### Training Yearly Outlook
+---
+##### Current Adult Sessions
 
-We are currently training on Friday evenings:
-* Adults TBC
-* Juniors 4pm-5pm (term time only)
+**Tuesdays 7pm-8:30pm**\
+Canterbury RFC (Grass)
 
-Our training locations change throughout the season, however we are
-always in Canterbury or the surrounding area. Please check our
-[calendar]({{<ref "/calendar" >}}) to see where we are currently training.
+**Fridays 7pm-8:30pm**\
+Canterbury RFC (Grass)
 
-#### Adult Training
-**January & February**\
-1 &times; indoor sports hall session\
-1 &times; gym/fitness session
+##### Current Junior Sessions
+**Fridays 4pm-5pm** (term time only)\
+The Langton Grammar School for Boys (4G)
 
-**March & April:**\
-1 &times; Adult Session (3G pitches)
+*Our training times and locations may change throughout the year but we will
+always be in Canterbury or the surrounding area. Subscribe to our
+[calendar]({{<ref "/calendar" >}}) to be kept up to date.*
 
-**May-September:**\
-1 &times; Adult Session (grass pitches)
+---
 
-**October-December:**\
-1 &times; Adult Session (3G pitches)
+### How to Join
+Choose your membership plan and click on the appropriate button to be taken to
+the Direct Debit payment form.
+Complete the Direct Debit mandate and then you will be redirected
+to another form to provide your personal details for our records. You must
+complete both parts of the sign-up for your membership to be complete.
+
+If you have any queries or problems, please email
+[membership@invictatouch.com](mailto:membership@invictatouch.com) (please allow
+up to 48 hours for a response).
