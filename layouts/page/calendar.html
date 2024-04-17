@@ -23,13 +23,16 @@
           eventContent: function(arg) {
             let title = arg.event._def.title;
             let location = arg.event._def.extendedProps.location;
+            let description = arg.event._def.extendedProps.description;
             let url = arg.event._def.url;
+            var detail = "";
             if (location) {
-              return {html: `<a href="${url}"><b>${title}</b><br/><small class="text-muted">${location}</small></a>`};
+              detail += `<br/><small class="text-muted">${location}</small>`;
             }
-            else {
-              return {html: `<a href="${url}"><b>${title}</b></a>`};
+            if (description) {
+              detail += `<br/><small class="text-secondary">${description}</small>`;
             }
+            return {html: `<a href="${url}"><b>${title}</b></a>${detail}`};
           }
         },
         dayGrid: {
@@ -45,7 +48,7 @@
     --fc-event-bg-color: var(--bs-secondary);
     --fc-event-border-color: var(--fc-event-bg-color);
   }
-  .fc-toolbar button, .fc-event {text-transform: capitalize;}
+  .fc-toolbar button {text-transform: capitalize;}
   .fc-daygrid-event {white-space: normal; flex-wrap: wrap;}
   .fc-daygrid-dot-event {align-items: baseline;}
   .fc-h-event {text-align: center;}
