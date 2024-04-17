@@ -1,9 +1,11 @@
 {{ define "head" }}
+<script src='https://cdn.jsdelivr.net/npm/moment@2.27.0/min/moment.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.11/index.global.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.11/index.global.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/list@6.1.11/index.global.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/bootstrap5@6.1.11/index.global.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.11/index.global.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/@fullcalendar/moment@6.1.11/index.global.min.js'></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
@@ -15,9 +17,9 @@
       validRange: function(nowDate) { return {start: nowDate}; },
       themeSystem: 'bootstrap5',
       firstDay: 1,
-      headerToolbar: {right: 'dayGridMonth,listMonth today prev,next'},
-      listDayFormat: {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'},
-      listDaySideFormat: null,
+      headerToolbar: {right: 'listMonth,dayGridMonth today prev,next'},
+      listDayFormat: 'dddd Do',
+      listDaySideFormat: 'MMMM YYYY',
       views: {
         list: {
           eventContent: function(arg) {
@@ -54,6 +56,8 @@
   .fc-daygrid-event {white-space: normal; flex-wrap: wrap;}
   .fc-daygrid-dot-event {align-items: baseline;}
   .fc-h-event {text-align: center;}
+  .fc .fc-list-event-title a {color: rgba(var(--bs-link-color-rgb));}
+  .fc-list-event-time {text-transform: capitalize;}
   @media screen and (max-width:767px) {.fc-toolbar.fc-header-toolbar {flex-direction:column;} .fc-toolbar-chunk {display: table-row; text-align:center; padding:5px 0;}}
 </style>
 {{ end }}
