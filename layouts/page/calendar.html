@@ -39,6 +39,7 @@
         },
         dayGrid: {
           eventTimeFormat: {hour: "numeric", minute: "2-digit", omitZeroMinute: true, meridiem: "short"},
+          displayEventEnd: true,
           fixedWeekCount: false,
           height: 'auto'
         }
@@ -58,6 +59,8 @@
   .fc-h-event {text-align: center;}
   .fc .fc-list-event-title a {color: rgba(var(--bs-link-color-rgb));}
   .fc-list-event-time {text-transform: capitalize;}
+  .fc-event-title {flex-basis: 100%;}
+  .fc-event-time {font-size: small;}
   @media screen and (max-width:767px) {.fc-toolbar.fc-header-toolbar {flex-direction:column;} .fc-toolbar-chunk {display: table-row; text-align:center; padding:5px 0;}}
 </style>
 {{ end }}
