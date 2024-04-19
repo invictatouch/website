@@ -59,7 +59,7 @@ level.
 ---
 ##### Current Adult Sessions
 
-**Tuesdays 7pm-8:30pm**\
+**Tuesdays 6:45pm-8:15pm**\
 Canterbury RFC (Grass)
 
 **Fridays 7pm-8:30pm**\

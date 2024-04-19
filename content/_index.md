@@ -6,7 +6,7 @@ menus:
     weight: 1
 
 adult_sessions:
- - time: Tuesdays 7pm-8:30pm
+ - time: Tuesdays 6:45pm-8:15pm
    venue: Canterbury RFC
    map: https://maps.app.goo.gl/iU146SgsXcpPJd3NA
  - time: Fridays 7pm-8:30pm
