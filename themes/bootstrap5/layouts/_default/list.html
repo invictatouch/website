@@ -1,9 +1,22 @@
 {{ define "main" }}
-  <h1>Posts</h1>
+  <h1 class="border-bottom">{{ .Title }}</h1>
   {{ range .Pages }}
-    <article>
-      <h2>{{ .Title }}</h2>
-      {{ .Content }}
-    </article>
+  <div class="row">
+    <div class="col-md-6 col-lg-4 col-xl-3">
+      {{ if .Params.image }}
+      <a href="{{ .Permalink }}">
+        {{ with .Resources.GetMatch .Params.image }}
+          <img src="{{ .Permalink }}" class="img-fluid"/>
+        {{ end }}
+      </a>
+      {{ end }}
+      <h3 class="mt-1 mb-1"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <small>
+        {{ .Summary }}
+        <a href="{{ .Permalink }}">Read more&hellip;</a>
+        <span class="text-muted float-end">{{ time.Format "2 January 2006" .Params.date }}</span>
+      </small>
+    </div>
+  </div>
   {{ end }}
 {{ end }}

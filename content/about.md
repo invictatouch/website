@@ -4,7 +4,7 @@ layout: about
 menus:
   main:
     name: About
-    weight: 2
+    weight: 3
 
 committee:
  - name: Suz Wilson

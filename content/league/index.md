@@ -1,10 +1,10 @@
 ---
 title: '2024 Summer League'
-image: /images/league/2024.jpg
+image: 2024-league.jpg
 menus:
   main:
     name: 2024 Summer League
-    weight: 5
+    weight: 6
 ---
 
 The 2024 Canterbury Summer League will run weekly from Wednesday 15th May until Wednesday 10th July inclusive,

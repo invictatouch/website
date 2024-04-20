@@ -2,3 +2,9 @@ baseURL = 'https://invictatouch.com/'
 languageCode = 'en-gb'
 title = 'Invicta Touch'
 theme = 'bootstrap5'
+
+[permalinks]
+  [permalinks.page]
+    posts = '/news/:year/:month/:slug/'
+  [permalinks.section]
+    posts = '/news/'
