@@ -8,7 +8,7 @@ menus:
 
 memberships:
  - title: Adult Membership
-   image: /images/membership/adult_membership.jpg
+   image: adult_membership.jpg
    bg_colour: primary
    text_colour: light
    monthly_cost: £25
@@ -23,7 +23,7 @@ memberships:
 
  - title: Family Membership
    subtitle: Up to 2 adults + 2 children / 1 adult + 3 children
-   image: /images/membership/junior_membership.jpg
+   image: junior_membership.jpg
    bg_colour: secondary
    text_colour: light
    monthly_cost: £40
