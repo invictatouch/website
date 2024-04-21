@@ -34,4 +34,4 @@ We compete against the top clubs in the country in the National Touch Series and
 more than 30 of our current and former players have gone on to represent England, at
 all levels from under-15s to over-50s.
 Our annual [summer league]({{<ref "/league" >}}) is one of the biggest club leagues in England,
-with over 150 players playing each week for 10 weeks every summer.
+with 16 teams and around 180 players playing each week for 10 weeks every summer.
