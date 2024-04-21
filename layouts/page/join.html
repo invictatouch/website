@@ -1,63 +1,66 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <div class="row">
-    <div class="col-xl-5">
-      {{ .Content }}
-    </div>
-    <div class="col-xl-7">
-      {{ with .Params.memberships }}
-      <div class="row">
-        {{ range . }}
-        <div class="col-md mb-3">
-          <div class="card border-{{ .bg_colour }} h-100 text-{{ .bg_colour }}">
-            <img src="{{ .image }}" class="card-img-top" alt="{{ .title }}" />
-            <div class="card-body">
-              <h4 class="card-title text-center heavy">{{ .title }}</h4>
-              {{ with .bullets }}
-              <ul>
-                {{ range . }}<li>{{ .|safeHTML }}</li>{{ end }}
-              </ul>
-              {{ end }}
+  {{ .Content }}
+  {{ with .Params.memberships }}
+  <div class="row mt-4">
+    {{ range . }}
+    <div class="col-lg-4 mb-3">
+      <div class="card border-{{ .bg_colour }} h-100 text-{{ .bg_colour }}">
+        <img src="{{ .image }}" class="card-img-top" alt="{{ .title }}" />
+        <div class="card-body">
+          <h4 class="card-title text-center heavy">{{ .title }}</h4>
+          {{ with .bullets }}
+          <ul>
+            {{ range . }}<li>{{ .|safeHTML }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
+        <div class="card-footer">
+          <div class="row text-center">
+            <div class="col">
+              Monthly<br/>
+              <h1 class="text-{{ .bg_colour }}">{{ .monthly_cost }}</h1>
+              <a href="{{ .monthly_url }}" target="_blank" class="btn btn-{{ .bg_colour }}">Pay Monthly</a>
             </div>
-            <div class="card-footer">
-              <div class="row text-center">
-                <div class="col">
-                  Monthly<br/>
-                  <h1 class="text-{{ .bg_colour }}">{{ .monthly_cost }}</h1>
-                  <a href="{{ .monthly_url }}" target="_blank" class="btn btn-{{ .bg_colour }}">Pay Monthly</a>
-                </div>
-                <div class="col">
-                  Yearly<sup>*</sup><br/>
-                  <h1 class="text-{{ .bg_colour }}">{{ .yearly_cost }}</h1>
-                  <a href="{{ .yearly_url }}" target="_blank" class="btn btn-{{ .bg_colour }}">Pay Yearly</a><br/>
-                </div>
-              </div>
-              <p class="mt-2 text-center small mb-0">* Get 12 months for the price of 11</p>
+            {{ if .yearly_cost }}
+            <div class="col">
+              Yearly<br/>
+              <h1 class="text-{{ .bg_colour }}">{{ .yearly_cost }}</h1>
+              <a href="{{ .yearly_url }}" target="_blank" class="btn btn-{{ .bg_colour }}">Pay Yearly</a><br/>
             </div>
+            {{ end }}
           </div>
         </div>
-        {{ end }}
       </div>
-      {{ end }}
-      <div class="row">
-        <div class="col">
-          <div class="card border-dark card-dark text-muted text-center">
-            <div class="card-body">
-              <h5 class="card-title heavy">Pay-to-Play Membership</h5>
-              <p class="mb-0 small">
-                Not ready to commit or can't play every week?
-                <b>Join as a pay-to-play member for just {{ .Params.paytoplay_yearly }} a year.</b>
-                This makes you a member of the club for insurance purposes and you can then attend
-                whichever sessions are convenient for you for <b>{{ .Params.paytoplay_session }} per session</b>.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="{{ .Params.paytoplay_url }}" target="_blank" class="btn btn-sm btn-dark">Join Now</a>
-            </div>
-          </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  <div class="row">
+    <div class="col">
+      <div class="card border-dark card-dark text-muted text-center">
+        <div class="card-body">
+          <h5 class="card-title heavy">Pay-to-Play Membership</h5>
+          <p class="mb-0 small">
+            Not ready to commit or can't play every week?
+            <b>Join as a pay-to-play member for just {{ .Params.paytoplay_yearly }} a year.</b>
+            This makes you a member of the club for insurance purposes and you can then attend
+            whichever sessions are convenient for you for <b>{{ .Params.paytoplay_session }} per session</b>.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="{{ .Params.paytoplay_url }}" target="_blank" class="btn btn-sm btn-dark">Join Now</a>
         </div>
       </div>
     </div>
   </div>
+  <p class="mt-3 small">
+    Choose your membership plan and click on the appropriate button to be taken to the Direct Debit payment form.
+    Complete the Direct Debit mandate and then you will be redirected to another form to provide your personal details for our records.
+    You must complete both parts of the sign-up for your membership to be complete.
+    If you have any queries or problems, please email
+    <a href="mailto:membership@invictatouch.com">membership@invictatouch.com</a> (please allow
+    up to 48 hours for a response).
+  </p>
 {{ end }}
 
