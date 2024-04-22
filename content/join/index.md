@@ -8,7 +8,7 @@ menus:
 
 memberships:
  - title: Adult Membership
-   image: adult_membership.jpg
+   image: adult_membership.jpg?a
    bg_colour: primary
    text_colour: light
    monthly_cost: £25
@@ -24,7 +24,7 @@ memberships:
 
  - title: Family Membership
    subtitle: Up to 2 adults + 2 children / 1 adult + 3 children
-   image: family_membership.jpg
+   image: family_membership.jpg?a
    bg_colour: secondary
    text_colour: light
    monthly_cost: £40
@@ -35,7 +35,7 @@ memberships:
     - For two adults and up to two children (aged 5 to 17), or one adult and up to three children
     - Full benefits of adult or junior membership for each family member
     - One month free when paid yearly
-    - More than four players in your family? Email <a href="mailto:https://invictatouch.com" class="alert-link">membership@invictatouch.com</a> for a bespoke discounted package
+    - More than four players in your family? <a href="mailto:membership@invictatouch.com" class="alert-link">Contact us</a> for a bespoke discounted package
 
  - title: Junior Membership
    image: junior_membership.jpg
@@ -49,9 +49,16 @@ memberships:
     - Fully qualified and DBS-checked coaches
     - Access to adult sessions for players aged 14+
 
-paytoplay_yearly: £10
-paytoplay_session: £7
-paytoplay_url: https://pay.gocardless.com/AL00160FE006BG
+ - title: Pay-to-Play
+   image: paytoplay.jpg
+   bg_colour: success
+   text_colour: light
+   yearly_cost: £10
+   yearly_url: https://pay.gocardless.com/AL00160FE006BG
+   bullets:
+    - Not ready to commit or can't play every week?
+    - Join as a pay-to-play member for just £10 a year
+    - Attend whichever sessions are convenient for you for <b>£7 per session</b>
 ---
 
 Invicta Touch offers a range of different membership options, providing
