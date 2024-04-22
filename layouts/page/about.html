@@ -6,7 +6,7 @@
     {{ with .Params.committee }}
     {{ range . }}
     <div class="col-xl col-md-4 col-6 text-center mb-4">
-      <img src="{{ .mugshot }}" alt="{{ .name }}" class="img-thumbnail" />
+      <img src="{{ .mugshot }}" alt="{{ .name }}" class="img-thumbnail ratio ratio-1x1" />
       <h4 class="mb-0 mt-2">{{ .name }}</h4>
       <span class="text-secondary">{{ .position|safeHTML }}</span>
     </div>
