@@ -2,6 +2,17 @@
   <!-- This will override the default value set in baseof.html; i.e., "{{ .Site.Title }}" in the original example-->
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
+{{ define "head" }}
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_GB" />
+  {{ if .Params.image }}
+    {{ with .Resources.GetMatch .Params.image }}
+    <meta property="og:image" content="{{ .Permalink }}" />
+    {{ end }}
+  {{ end }}
+{{ end }}
 {{ define "main" }}
   {{ if .Params.date }}
   <h1 class="mb-0">{{ .Title }}</h1>
