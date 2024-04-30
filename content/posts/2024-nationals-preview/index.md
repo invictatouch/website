@@ -8,14 +8,14 @@ menus:
     name: News
 ---
 Nine Invicta Touch players have been selected to represent the South East region at the Touch Nationals
-in Nottingham over the May Day bank holiday weekend and a further four will feature for the South West.
+in Nottingham over the May Day bank holiday weekend and a further five will feature for other regions.
 <!--more-->
 The Nationals features regional teams from around the country competing in open, senior, and masters
 divisions (the junior Nationals will be played in September). Teams representing the South East
 play as either the *Sharks* or the *Taipans* -- or both in the case of the open divisions.
 
-The Invicta influence extends beyond our home region with four of our NTS players also having been
-selected to represent the South West Saxons.
+The Invicta influence extends beyond our home region with five of our NTS players also having been
+selected to represent the South West Saxons and Midlands Tigers.
 
 The full schedule of matches is [here](https://docs.google.com/spreadsheets/u/0/d/1qRWyJx0R50PDtM6opQCd5mflergsXhzxo4aTotGeepM/htmlview)
 and games on pitch 1 will be live-streamed on the [England Touch Youtube channel](https://www.youtube.com/englandtouch).
@@ -35,6 +35,9 @@ South East Taipans - Men's 45s
 South East Sharks - Men's 50s
 : Eddie French, Martin Reynard, Adrian Riggs
 ---
+Midland Tigers - Men's Open
+: Matt Mayall
+
 South West Saxons - Men's Open
 : Toby Lister
 
