@@ -1,7 +1,7 @@
 {{ define "main" }}
   <h1 class="border-bottom">{{ .Title }}</h1>
-  {{ range .Pages }}
   <div class="row">
+    {{ range .Pages }}
     <div class="col-md-6 col-lg-4 col-xl-3">
       {{ if .Params.image }}
       <a href="{{ .Permalink }}">
@@ -10,13 +10,12 @@
         {{ end }}
       </a>
       {{ end }}
-      <h3 class="mt-1 mb-1"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-      <small>
+      <h5 class="mt-2 mb-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+      <div class="small text-secondary mb-2">{{ time.Format "2 January 2006" .Params.date }}</div>
+      <small class="text-muted">
         {{ .Summary }}
-        <a href="{{ .Permalink }}">Read more&hellip;</a>
-        <span class="text-muted float-end">{{ time.Format "2 January 2006" .Params.date }}</span>
       </small>
     </div>
+    {{ end }}
   </div>
-  {{ end }}
 {{ end }}
