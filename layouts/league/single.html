@@ -1,0 +1,46 @@
+{{ define "title" }}
+  <!-- This will override the default value set in baseof.html; i.e., "{{ .Site.Title }}" in the original example-->
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "head" }}
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:locale" content="en_GB" />
+{{ end }}
+{{ define "main" }}
+  <h1 class="mb-0">
+    {{ .Title }}
+  </h1>
+  <div class="text-muted border-bottom mb-4">{{ time.Format "Monday 2 January 2006" .Params.matchday }}</div>
+  {{ .Content }}
+  {{ with .Params.fixtures.premiership }}
+  <h2 class="text-center">Social League 1</h2>
+  <table class="table table-sm table-borderless">
+    {{ range . }}
+    <tr>
+      <td class="col-1 small text-secondary">{{ .time }}</td>
+      <td class="col-4 text-end">{{ .team1 }}</td>
+      <td class="col-1 text-center text-muted small">vs.</td>
+      <td class="col-4 text-start">{{ .team2 }}</td>
+      <td class="col-1 small text-secondary">Pitch {{ .pitch }}</td>
+    </tr>
+    {{ end }}
+  </table>
+  {{ end }}
+  {{ with .Params.fixtures.championship }}
+  <h2 class="text-center">Social League 2</h2>
+  <table class="table table-sm table-borderless">
+    {{ range . }}
+    <tr>
+      <td class="col-1 small text-secondary">{{ .time }}</td>
+      <td class="col-4 text-end">{{ .team1 }}</td>
+      <td class="col-1 text-center text-muted small">vs.</td>
+      <td class="col-4 text-start">{{ .team2 }}</td>
+      <td class="col-1 small text-secondary">Pitch {{ .pitch }}</td>
+    </tr>
+    {{ end }}
+  </table>
+  {{ end }}
+  </div>
+{{ end }}
+
