@@ -40,6 +40,6 @@ fixtures:
    - team1: Touched 4 The Very Third Time
      team2: Ashford Bumblebees
      pitch: 3
-     time: 20:10
+     time: 19:20
 ---
 
