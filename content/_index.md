@@ -6,9 +6,9 @@ menus:
     weight: 1
 
 adult_sessions:
- - time: Tuesdays 6:45pm-8:15pm
-   venue: Canterbury RFC
-   map: https://maps.app.goo.gl/iU146SgsXcpPJd3NA
+ - time: Wednesdays 6:30pm-9:00pm
+   venue: Summer League
+   map: /league/
  - time: Fridays 7pm-8:30pm
    venue: Canterbury RFC
    map: https://maps.app.goo.gl/iU146SgsXcpPJd3NA
