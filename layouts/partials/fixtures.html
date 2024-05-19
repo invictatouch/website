@@ -5,14 +5,14 @@
       <i class="fa-solid fa-shirt me-2" style="color: {{ .team1.colour }};"></i>
       {{ .team1.name }}
     </td>
-    <td class="small text-secondary text-center">{{ .time }}</td>
+    <td class="text-secondary text-end"><b>{{ .time }}</b></td>
   </tr>
   <tr>
     <td class="pb-3">
       <i class="fa-solid fa-shirt me-2" style="color: {{ .team2.colour }};"></i>
       {{ .team2.name }}
     </td>
-    <td class="pb-3 small text-secondary text-center">Pitch {{ .pitch }}</td>
+    <td class="pb-3 small text-secondary text-end">Pitch {{ .pitch }}</td>
   </tr>
   {{ end }}
 </table>

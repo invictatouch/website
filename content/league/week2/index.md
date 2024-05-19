@@ -16,18 +16,8 @@ fixtures:
        name: Burgess Hodgson
        colour: "#0E52A4"
        score: 0
-     pitch: TBC
-     time: TBC
-   - team1:
-       name: Flankers
-       colour: "#F5B5CF"
-       score: 0
-     team2:
-       name: Not Trying Enough
-       colour: "#1A9BE2"
-       score: 0
-     pitch: TBC
-     time: TBC
+     pitch: 2
+     time: 18:30
    - team1:
        name: Ruck Me Till I Scrum
        colour: "#D50051"
@@ -36,8 +26,8 @@ fixtures:
        name: Touching Turkeys
        colour: "#F6D7D4"
        score: 0
-     pitch: TBC
-     time: TBC
+     pitch: 3
+     time: 18:30
    - team1:
        name: Wombles
        colour: "#94C6CA"
@@ -46,8 +36,18 @@ fixtures:
        name: The Pythons
        colour: "#334466"
        score: 0
-     pitch: TBC
-     time: TBC
+     pitch: 1
+     time: 19:20
+   - team1:
+       name: Flankers
+       colour: "#F5B5CF"
+       score: 0
+     team2:
+       name: Not Trying Enough
+       colour: "#1A9BE2"
+       score: 0
+     pitch: 3
+     time: 19:20
   championship:
    - team1:
        name: Boys Become Men
@@ -57,18 +57,8 @@ fixtures:
        name: He Touched Me Here, Here & Here
        colour: "#214211"
        score: 0
-     pitch: TBC
-     time: TBC
-   - team1:
-       name: Exiles
-       colour: "#09317F"
-       score: 0
-     team2:
-       name: Live and Let Try
-       colour: "#444444"
-       score: 0
-     pitch: TBC
-     time: TBC
+     pitch: 1
+     time: 18:30
    - team1:
        name: Faversham Kraken
        colour: "#9B002B"
@@ -77,14 +67,24 @@ fixtures:
        name: Ashford Bumblebees
        colour: "#A4A6A4"
        score: 0
-     pitch: TBC
-     time: TBC
+     pitch: 2
+     time: 19:20
+   - team1:
+       name: Exiles
+       colour: "#09317F"
+       score: 0
+     team2:
+       name: Live and Let Try
+       colour: "#444444"
+       score: 0
+     pitch: 1
+     time: 20:10
    - team1:
        name: The REDS
        colour: "#BF0026"
        score: 0
-     pitch: TBC
-     time: TBC
+     pitch: 2
+     time: 20:10
      team2:
        name: Touched 4 The Very Third Time
        colour: "#513470"
