@@ -5,7 +5,7 @@
     July inclusive, with a free practice and coaching session for all teams on Wednesday 8th May.
   </p>
   <ul>
-    {{ range .Pages }}
+    {{ range .Pages.Reverse }}
 
     <li>
       <a href="{{ .Permalink }}">{{ .Title }}</a>
