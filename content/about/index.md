@@ -20,7 +20,7 @@ committee:
    position: Secretary
    mugshot: ellen.jpg
  - name: Dan Dyer
-   position: Membership & Website
+   position: Membership, Referees & Website
    mugshot: dan.jpg
 
 ---

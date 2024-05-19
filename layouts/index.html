@@ -103,9 +103,13 @@
          <img src="{{ .Permalink }}" class="ratio ratio-4x3"/>
          {{ end }}
        </a>
-       <h5 class="mt-2 mb-4">
+       <h5 class="mt-2 mb-0">
          <a href="{{ .Permalink }}">{{ .Title }}</a>
        </h5>
+       <div class="small text-secondary mb-2">{{ time.Format "2 January 2006" .Params.date }}</div>
+       <small class="text-muted">
+         {{ .Summary }}
+       </small>
      </div>
    {{ end }}
 {{ end }}
