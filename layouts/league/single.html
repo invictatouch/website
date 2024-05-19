@@ -6,13 +6,16 @@
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:locale" content="en_GB" />
+  <script src="https://kit.fontawesome.com/924a0097e6.js" crossorigin="anonymous"></script>
 {{ end }}
 {{ define "main" }}
-  <h1 class="mb-0">
+  <h1 class="border-bottom mb-4">
     {{ .Title }}
+    <br class="d-lg-none" />
+    <span class="text-muted float-lg-end small">{{ time.Format "Monday 2 January 2006" .Params.matchday }}</span>
   </h1>
-  <div class="text-muted border-bottom mb-4">{{ time.Format "Monday 2 January 2006" .Params.matchday }}</div>
   {{ .Content }}
+  {{ if .Params.fixtures }}
   {{ with .Params.fixtures.premiership }}
   <h2 class="text-center">Social League 1</h2>
   <table class="table table-sm table-borderless">
@@ -40,6 +43,29 @@
     </tr>
     {{ end }}
   </table>
+  {{ end }}
+  {{ end }}
+  {{ if .Params.results }}
+  <div class="row">
+    <div class="col-lg-6 pe-lg-5">
+      <h3 class="text-center">Social League 1</h3>
+      {{ with .Params.results.premiership }}
+      {{ partial "results.html" . }}
+      {{ end }}
+      {{ with .Params.tables.premiership }}
+      {{ partial "table.html" . }}
+      {{ end }}
+    </div>
+    <div class="col-lg-6 ps-lg-5">
+      <h3 class="text-center">Social League 2</h3>
+      {{ with .Params.results.championship }}
+      {{ partial "results.html" . }}
+      {{ end }}
+      {{ with .Params.tables.championship }}
+      {{ partial "table.html" . }}
+      {{ end }}
+    </div>
+  </div>
   {{ end }}
   </div>
 {{ end }}

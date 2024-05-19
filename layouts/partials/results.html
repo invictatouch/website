@@ -1,0 +1,18 @@
+<table class="table table-sm table-borderless">
+  {{ range . }}
+  <tr>
+    <td>
+      <i class="fa-solid fa-shirt me-2" style="color: {{ .colour1 }};"></i>
+      {{ if gt .score1 .score2 }}<b>{{ .team1 }}</b>{{ else }}{{ .team1 }}{{ end }}
+    </td>
+    <td class="text-end">{{ if gt .score1 .score2 }}<b>{{ .score1 }}</b>{{ else }}{{ .score1 }}{{ end }}</td>
+  </tr>
+  <tr>
+    <td class="pb-3">
+      <i class="fa-solid fa-shirt me-2" style="color: {{ .colour2 }};"></i>
+      {{ if lt .score1 .score2 }}<b>{{ .team2 }}</b>{{ else }}{{ .team2 }}{{ end }}
+    </td>
+    <td class="pb-3 text-end">{{ if lt .score1 .score2 }}<b>{{ .score2 }}</b>{{ else }}{{ .score2 }}{{ end }}</td>
+  </tr>
+  {{ end }}
+</table>

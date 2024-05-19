@@ -1,0 +1,19 @@
+<table class="table table-sm">
+  <tr>
+    <th>Pos</th>
+    <th>Team</th>
+    <th class="text-end">Diff</th>
+    <th class="text-end">Pts</th>
+  </tr>
+  {{ range $i, $element := . }}
+  <tr>
+    <td class="text-muted">{{ add $i 1 }}</td>
+    <td>
+      <i class="fa-solid fa-shirt me-2" style="color: {{ .colour }};"></i>
+      {{ .team }}
+    </td>
+    <td class="text-end">{{ .diff }}</td>
+    <td class="text-end"><b>{{ .points }}</b></td>
+  </tr>
+  {{ end }}
+</table>
