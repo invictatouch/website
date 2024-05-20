@@ -10,8 +10,8 @@ adult_sessions:
    venue: Summer League
    map: /league/
  - time: Fridays 7pm-8:30pm
-   venue: Canterbury RFC
-   map: https://maps.app.goo.gl/iU146SgsXcpPJd3NA
+   venue: Barton Fields
+   map: https://maps.app.goo.gl/T8uhzbgRr56cnGAf6
 junior_sessions:
  - time: Fridays 4pm-5pm<br/>(term time only)
    venue: The Langton School for Boys
