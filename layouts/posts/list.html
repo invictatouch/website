@@ -7,7 +7,8 @@
       {{ if .Params.image }}
       <a href="{{ .Permalink }}">
         {{ with .Resources.GetMatch .Params.image }}
-          <img src="{{ .Permalink }}" class="ratio ratio-4x3"/>
+        {{ $image := .Resize "640x Lanczos q95" }}
+          <img src="{{ $image.Permalink }}" class="ratio ratio-4x3"/>
         {{ end }}
       </a>
       {{ end }}
