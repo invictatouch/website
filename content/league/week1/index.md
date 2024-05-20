@@ -80,7 +80,7 @@ results:
      pitch: 2
      time: 19:20
    - team1:
-       name: Touched 4 The Very Third Time
+       name: Touched 4 the Very Third Time
        colour: "#513470"
        score: 1
      team2:
@@ -141,7 +141,7 @@ tables:
       colour: "#214211"
       diff: "+1"
       points: 4
-    - team: Live And Let Try
+    - team: Live and Let Try
       colour: "#444444"
       diff: -1
       points: 1
@@ -149,7 +149,7 @@ tables:
       colour: "#09317F"
       diff: -6
       points: 1
-    - team: Touched 4 The Very Third Time
+    - team: Touched 4 the Very Third Time
       colour: "#513470"
       diff: -7
       points: 1
