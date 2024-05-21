@@ -1,16 +1,32 @@
+{{ define "head" }}
+  <script src="https://kit.fontawesome.com/924a0097e6.js" crossorigin="anonymous"></script>
+{{ end }}
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   <p class="lead">
     The 2024 Canterbury Summer Touch League will run weekly from Wednesday 15th May until Wednesday 10th
     July inclusive, with a free practice and coaching session for all teams on Wednesday 8th May.
   </p>
-  <ul>
+  <div class="list-group list-group-horizontal-lg mb-4">
     {{ range .Pages.Reverse }}
-
-    <li>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
+    <a class="list-group-item list-group-item-action text-primary" href="{{ .Permalink }}"><b>{{ .Title }}</b></a>
     {{ end }}
-  </ul>
+  </div>
+  <div class="row">
+    {{ range .Pages.Reverse.Limit 1 }}
+      <div class="col-lg-6 pe-lg-5">
+        <h3 class="text-center">Social League 1</h3>
+        {{ with .Params.tables.premiership }}
+          {{ partial "table.html" . }}
+        {{ end }}
+      </div>
+      <div class="col-lg-6 ps-lg-5">
+        <h3 class="text-center">Social League 2</h3>
+        {{ with .Params.tables.championship }}
+          {{ partial "table.html" . }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
   {{ .Content }}
 {{ end }}
