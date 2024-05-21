@@ -1,5 +1,5 @@
 ---
-title: 'Invicta Touch'
+title: 'Invicta Touch - Touch Rugby in Kent'
 menus:
   main:
     name: Home

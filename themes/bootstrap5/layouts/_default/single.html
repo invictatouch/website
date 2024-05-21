@@ -27,7 +27,7 @@
     {{ if .Params.image }}
     <div class="col-xl">
       {{ with .Resources.GetMatch .Params.image }}
-      <img src="{{ .Permalink }}" class="img-fluid mb-3"/>
+      <img src="{{ .Permalink }}" class="img-fluid mb-3 rounded"/>
       {{ end }}
     </div>
     {{ end }}
