@@ -7,10 +7,6 @@ menus:
     weight: 5
 
 opens:
- - name: Matt Davis
-   divisions:
-    - B18
-    - MO
  - name: Max Howard
    divisions:
     - MO
@@ -32,14 +28,6 @@ opens:
     - B18
     - M20
     - XO
- - name: Danni Payten
-   divisions:
-    - G18
-    - WO
- - name: Erin Payten
-   divisions:
-    - G18
-    - WO
  - name: Michael Roberts
    country: Wales
    divisions:
@@ -56,24 +44,12 @@ opens:
     - WO
 
 juniors:
- - name: Emily Brightling
-   divisions:
-    - X18
  - name: Dan Eaglestone
    divisions:
     - B18
- - name: Meg Fox
-   divisions:
-    - G18
  - name: Rory Howard
    divisions:
     - B18
- - name: Ross Howard
-   divisions:
-    - X18
- - name: Connor Hughes
-   divisions:
-    - X15
  - name: Gus Lister
    divisions:
     - B18
@@ -87,20 +63,6 @@ juniors:
  - name: Stuart Meredith
    divisions:
     - B18
- - name: Flori Nasir
-   divisions:
-    - X15
- - name: Iris Nasir
-   divisions:
-    - G18
- - name: Ayla Payten
-   divisions:
-    - G18
-    - X18
- - name: Abigail Pritchard
-   divisions:
-    - X15
-    - G18
  - name: Danny Ticehurst
    divisions:
     - X20
@@ -134,5 +96,5 @@ referees:
 
 # Invicta Touch Honour Roll
 
-The following Invicta Touch and Canterbury Touch players and referees, past
+The following Invicta Touch players and referees, past
 and present, have represented their country in FIT-sanctioned international tournaments or test matches.
