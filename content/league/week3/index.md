@@ -16,8 +16,8 @@ fixtures:
        name: The Pythons
        colour: "#334466"
        score: 0
-     pitch: 2
-     time: 20:10
+     pitch: 3
+     time: 19:20
    - team1:
        name: Human Touch
        colour: "#F16B1B"
@@ -57,8 +57,8 @@ fixtures:
        name: Live and Let Try
        colour: "#444444"
        score: 0
-     pitch: 3
-     time: TBC
+     pitch: 2
+     time: 20:10
    - team1:
        name: Exiles
        colour: "#09317F"
