@@ -3,10 +3,17 @@
 {{ end }}
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <p class="lead">
+  <p class="lead mt-3">
     The 2024 Canterbury Summer Touch League will run weekly from Wednesday 15th May until Wednesday 10th
     July inclusive, with a free practice and coaching session for all teams on Wednesday 8th May.
   </p>
+  <div class="row gx-lg-3">
+    {{ range .Params.images }}
+    <div class="col-lg-4 mb-3">
+      <img src="{{ .file }}" class="img-fluid rounded"/>
+    </div>
+    {{ end }}
+  </div>
   <div class="list-group list-group-horizontal-lg mb-4">
     {{ range .Pages.Reverse }}
     <a class="list-group-item list-group-item-action text-primary" href="{{ .Permalink }}"><b>{{ .Title }}</b></a>
