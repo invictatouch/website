@@ -1,8 +1,8 @@
 ---
-title: '2024 Summer League'
+title: 'Invicta Touch 2024 Summer League'
 menus:
   main:
-    name: 2024 Summer League
+    name: Summer League
     weight: 6
 images:
  - file: week1.jpg

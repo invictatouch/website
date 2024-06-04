@@ -2,9 +2,6 @@
 title: 'Week 4 - Fixtures'
 slug: 'week-4'
 matchday: 2024-06-05T18:30:00
-menus:
-  main:
-    name: 2024 Summer League
 
 fixtures:
   premiership:

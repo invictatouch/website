@@ -3,9 +3,6 @@ title: 'Invicta Players Selected in Regional Squads for Nationals'
 slug: 'invicta-players-selected-in-regional-squads-for-nationals'
 date: 2024-04-30T08:00:00
 image: seta.jpg
-menus:
-  main:
-    name: News
 ---
 Nine Invicta Touch players have been selected to represent the South East region at the Touch Nationals
 in Nottingham over the May Day bank holiday weekend and a further five will feature for other regions.

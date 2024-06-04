@@ -3,9 +3,6 @@ title: 'Invicta Men Confirm Elite Status With MWNTS Top 5 Finish'
 slug: 'invicta-men-confirm-elite-status-with-mwnts-top-5-finish'
 date: 2024-05-19T18:00:00
 image: 2024-mwnts-finals.jpg
-menus:
-  main:
-    name: News
 ---
 Invicta Touch's elite men's team confirmed their status as one of the top teams in England with
 a 5th-place finish in this season's Men's &amp; Women's National Touch Series at the final round

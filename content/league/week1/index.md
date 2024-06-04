@@ -2,9 +2,6 @@
 title: 'Week 1 - Results'
 slug: 'week-1'
 matchday: 2024-05-15T18:30:00
-menus:
-  main:
-    name: 2024 Summer League
 
 results:
   premiership:

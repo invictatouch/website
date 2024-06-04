@@ -2,9 +2,6 @@
 title: 'Week 2 - Results'
 slug: 'week-2'
 matchday: 2024-05-22T18:30:00
-menus:
-  main:
-    name: 2024 Summer League
 
 results:
   premiership:

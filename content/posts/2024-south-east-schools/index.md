@@ -3,9 +3,6 @@ title: 'Invicta Juniors Shine at South East Schools Championships'
 slug: 'invicta-juniors-shine-at-south-east-schools-championships'
 date: 2024-05-12T18:00:00
 image: langton-y7-8.jpg
-menus:
-  main:
-    name: News
 ---
 13 of Invicta's junior players took part in the South East Schools Championships in Reigate on
 Friday, supported by our junior lead Tom Humphreys.

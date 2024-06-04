@@ -2,9 +2,6 @@
 title: 'Week 3 - Results'
 slug: 'week-3'
 matchday: 2024-05-29T18:30:00
-menus:
-  main:
-    name: 2024 Summer League
 
 results:
   premiership:

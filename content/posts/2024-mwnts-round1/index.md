@@ -3,9 +3,6 @@ title: 'Invicta Men Make Division One Debut'
 slug: 'invicta-men-make-division-one-debut'
 date: 2024-04-15T08:00:00
 image: 2024-mwnts-round1.jpg
-menus:
-  main:
-    name: News
 ---
 Having earned promotion from Division Two of the Men's & Women's National Touch Series last season,
 Invicta's elite men's team took their place among the top eight men's sides in the country as the
