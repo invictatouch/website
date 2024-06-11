@@ -1,18 +1,24 @@
 <table class="table table-sm">
   <tr>
-    <th>Pos</th>
+    <th>&nbsp;</th>
+    <th class="text-center">Pos</th>
     <th>Team</th>
     <th class="text-end">Diff</th>
     <th class="text-end">Pts</th>
   </tr>
   {{ range $i, $element := . }}
-  <tr>
-    <td class="text-muted">{{ add $i 1 }}</td>
+  <tr{{ if (eq $i 3) }} class="border-secondary dashed"{{ end }}>
+    {{ if eq (mod $i 4) 0 }}
+    <td rowspan="4" class="align-middle small text-white {{ cond (eq $i 0) "bg-primary" "bg-secondary" }}" style="width: 30px;">
+      <div style="writing-mode: vertical-rl; transform: rotate(180deg); text-transform: uppercase;">{{ cond (eq $i 0) "Cup" "Plate" }}</div>
+    </td>
+    {{ end }}
+    <td class="text-muted text-center">{{ add $i 1 }}</td>
     <td>
       <i class="fa-solid fa-shirt me-2" style="color: {{ .colour }};"></i>
       {{ .team }}
     </td>
-    <td class="text-end">{{ .diff }}</td>
+    <td class="text-muted text-end">{{ .diff }}</td>
     <td class="text-end"><b>{{ .points }}</b></td>
   </tr>
   {{ end }}
