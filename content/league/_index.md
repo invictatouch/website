@@ -6,8 +6,8 @@ menus:
     weight: 6
 images:
  - file: week1.jpg
- - file: week3.jpg
  - file: ref.jpg
+ - file: owain.jpg
 ---
 
 ---
