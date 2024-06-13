@@ -1,5 +1,5 @@
 ---
-title: 'Week 5 - Fixtures'
+title: 'Week 5 - Results'
 slug: 'week-5'
 matchday: 2024-06-12T18:30:00
 
