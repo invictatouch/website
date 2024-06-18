@@ -6,12 +6,12 @@ menus:
     weight: 1
 
 adult_sessions:
+ - time: Mondays 7pm-8:30pm
+   venue: Barton Fields
+   map: https://maps.app.goo.gl/T8uhzbgRr56cnGAf6
  - time: Wednesdays 6:30pm-9:00pm
    venue: Summer League
    map: /league/
- - time: Fridays 7pm-8:30pm
-   venue: Barton Fields
-   map: https://maps.app.goo.gl/T8uhzbgRr56cnGAf6
 junior_sessions:
  - time: Fridays 4pm-5pm<br/>(term time only)
    venue: The Langton School for Boys
