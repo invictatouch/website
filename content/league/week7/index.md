@@ -67,16 +67,6 @@ fixtures:
      pitch: 2
      time: 19:20
    - team1:
-       name: He Touched Me Here, Here & Here
-       colour: "#214211"
-       score: 0
-     team2:
-       name: Faversham Kraken
-       colour: "#9B002B"
-       score: 0
-     pitch: 3
-     time: 19:20
-   - team1:
        name: Exiles
        colour: "#09317F"
        score: 0
@@ -84,8 +74,18 @@ fixtures:
        name: Touched 4 the Very Third Time
        colour: "#513470"
        score: 0
+     pitch: 3
+     time: 19:20
+   - team1:
+       name: He Touched Me Here, Here & Here
+       colour: "#214211"
+       score: 0
+     team2:
+       name: Faversham Kraken
+       colour: "#9B002B"
+       score: 0
      pitch: 2
-     time: 20:10
+     time: 21:10
 
 tables:
   premiership:
