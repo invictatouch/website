@@ -85,7 +85,7 @@ fixtures:
        colour: "#9B002B"
        score: 0
      pitch: 2
-     time: 21:10
+     time: 20:10
 
 tables:
   premiership:
