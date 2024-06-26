@@ -9,7 +9,7 @@ National Touch Series in Burton-on-Trent on Saturday.
 <!--more-->
 Having earned promotion two weeks ago, Invicta were competitive against the top mixed teams in
 the country. An early win over Manchester Foxes got the day off to a good start but defeat by
-a single try against London Scorpions and loss to Bristol Jets meant we would be in the bottom
+a single try against London Scorpions and a loss to Bristol Jets meant we would be in the bottom
 half for the afternoon's knock-out games.
 
 A comfortable bowl quarter-final victory over Oxford was followed by a nail-biting semi-final
