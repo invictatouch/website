@@ -17,9 +17,9 @@
     </div>
     {{ end }}
   </div>
-  <div class="list-group list-group-horizontal-xl mb-4">
+  <div class="list-group list-group-horizontal-lg mb-4">
     {{ range .Pages.Reverse }}
-    <a class="list-group-item list-group-item-action text-primary" href="{{ .Permalink }}"><b>{{ .Title }}</b></a>
+    <a class="list-group-item list-group-item-action text-primary" href="{{ .Permalink }}"><b>{{ slicestr .Title 0 6 }}</b></a>
     {{ end }}
   </div>
   <div class="row mb-3">
